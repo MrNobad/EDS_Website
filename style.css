@@ -1,15 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
-  /* background-color: ; */
-}
-.navbar-brand{
-  padding: 0;
-  width: auto;
-}
-header{
-  position: sticky;
-  z-index: 1;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
@@ -22,7 +17,7 @@ header{
 
 }
 .bgimg-1 {
-  background-image: url("https://static.wixstatic.com/media/187a23_9daf7b2769624ee79e4ca37536006d49~mv2_d_3264_1836_s_2.jpg/v1/crop/x_0,y_374,w_3264,h_1088/fill/w_980,h_324,al_c,q_80,usm_0.66_1.00_0.01/187a23_9daf7b2769624ee79e4ca37536006d49~mv2_d_3264_1836_s_2.webp");
+  background-image: url("images/TV1.jpg");
   min-height: 400px;
 }
 
@@ -32,7 +27,7 @@ header{
 }
 
 .bgimg-3 {
-  background-image: url("https://static.wixstatic.com/media/187a23_6158ef071fa043148c420475b231ca4c~mv2_d_2048_1365_s_2.jpg/v1/crop/x_0,y_336,w_2048,h_693/fill/w_978,h_331,al_c,q_80,usm_0.66_1.00_0.01/58822278_858418041171693_212741936467935.webp");
+  background-image: url("images/fly.jpg");
   min-height: 400px;
 }
 .bgimg-4 {
@@ -44,7 +39,7 @@ header{
   min-height: 400px;
 }
 .bgimg-6 {
-  background-image: url("https://static.wixstatic.com/media/187a23_cfd1d0529c17428f9783467109ff88c1~mv2_d_3264_1836_s_2.jpg/v1/crop/x_255,y_103,w_2563,h_1673/fill/w_465,h_316,al_c,q_80,usm_0.66_1.00_0.01/187a23_cfd1d0529c17428f9783467109ff88c1~mv2_d_3264_1836_s_2.webp");
+  background-image: url("images/teviot-lights1.jpg");
   min-height: 400px;
 }
 .caption1, .caption3, .caption5{
@@ -96,9 +91,9 @@ h3{
 }
 .text-area{
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
-  height: 80%;
+  height: 50%;
   top: 80px;
   left: 0;
   color: #fff;
@@ -111,7 +106,6 @@ h3{
 .container-fluid{
   background-image: url(images/cards.jpg);
   background-position: center center;
-  z-index: -9999;
   -webkit-background-size: cover;
   background-size: cover;
   height: 1000px;
@@ -121,18 +115,32 @@ h3{
   background-size: cover;
   clip-path: polygon(0 0%, 100% 0, 100% 88%, 0% 100%);
 }
-.container-fluid ul{
+
+.navflex{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px 0px 0px 20px;
+}
+
+header {
+  position: relative;
+  display: flex;
+}
+
+header ul{
   background: #000;
   display: inline-block;
   padding: 10px 25px;
   display: flex;
   float: right;
 }
-.container-fluid ul li{
+header ul li{
   list-style: none;
+  text-decoration: none;
   padding: 10px 20px;
 }
-.container-fluid ul li a{
+header ul li a{
+  list-style: none;
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -141,7 +149,7 @@ h3{
   font-family: helvetica;
   text-transform: uppercase;
 }
-.container-fluid ul li a::before{
+header ul li a::before{
   content: '';
   width: 0;
   transition: .6s;
@@ -151,9 +159,67 @@ h3{
   background: #fff;
   height: 3px;
 }
-.container-fluid ul li:hover a::before{
+header ul li:hover a::before{
+  text-decoration: none;
+  color: #fff;
   transform: translateX(100%);
   width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  html{
+    font-size: 55%;
+  }
+  nav ul{
+    float: none;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  ul li{
+    float: none;
+    margin-left: 0;
+  }
+  ul li a{
+    padding: 10px 0;
+    text-align: center;
+  }
+  ul li:not(:last-child) a{
+    border-bottom: 1px solid #fff;
+  }
+  .custom-menu{
+    overflow: hidden;
+    background-color: #000;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .custom-menu a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .custom-menu span{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .custom-menu i{
+    font-size: 30px;
+    color: #fff;
+  }
+  .custom-menu #myLinks {
+    display: none;
+  }
+  .active {
+  background-color: #4CAF50;
+  color: white;
+}
 }
 
 h2{
@@ -194,7 +260,6 @@ h5{
   width: 100%;
   height: 100%;
   background: inherit;
-  z-index: -900;
   bottom: 0;
   content: '';
 }
@@ -227,45 +292,58 @@ h5{
 .container5 h2, h5{
   color: #fff;
 }
+
 .content{
   font-weight: bold;
   text-align: center;
-  padding: 0px 50px;
+  padding: 10px 50px;
   overflow: hidden;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
   height: auto;
 }
 .content-instagram{
   font-weight: bold;
   text-align: center;
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 10px;
   overflow: hidden;
   display: block;
   height: auto;
 }
 
 .wrapper2{
-  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapper3{
+  padding-top: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.wrapper4{
+.wrapper4 ul{
+  margin: 0px;
   background: #fff;
   padding: 30px;
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
 }
 
 ul {
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul li {
+    padding-bottom: 10px;
     list-style-type: none;
-    float: left;
 }
 
 ul li a i {
@@ -283,19 +361,26 @@ ul li a i {
 }
 
 .fa-facebook {
-    background:#3b5998
+  background:#3b5998;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.55);
 }
 .fa-instagram{
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.55);
 }
 
-.fa-envelope {
-    background:#000
+.fa-paper-plane {
+  background:#000;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.55);
 }
 ul li a i:hover {
     opacity: .7;
+}
+#plane{
+  font-size: 65px;
+  padding-right: 9px;
+  padding-top: 16px;
 }
 /* .box{
   display: -webkit-flex;
