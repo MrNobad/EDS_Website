@@ -5,6 +5,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  background-color: lightgrey;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
@@ -253,6 +254,10 @@ h5{
 #skew5{
   background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
+}
+#skew6{
+  background-color: #fff;
+  /* clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%); */
 }
 
 .cus-div::after{
