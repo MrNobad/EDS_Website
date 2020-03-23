@@ -197,7 +197,7 @@ header ul li:hover a::before{
   }
   .custom-menu{
     overflow: hidden;
-    background-color: #000;
+    background-color: transparent;
     position: absolute;
     top: 35px;
     right: 35px;
