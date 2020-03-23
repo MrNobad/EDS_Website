@@ -79,7 +79,7 @@ h3{
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   background: transparent;
   padding: 10px 10px;
   border-radius: 0px 0px 20px 20px;
@@ -90,7 +90,7 @@ h3{
 .logo{
   width: 70%;
   border-radius: 20px;
-  padding-top: 220px
+  padding-top: 200px
 }
 .text-area{
   position: absolute;
