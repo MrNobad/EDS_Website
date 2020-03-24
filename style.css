@@ -23,7 +23,7 @@ body{
 }
 
 .bgimg-2 {
-  background-image: url("https://static.wixstatic.com/media/187a23_7e2be440dd4145479dce6c98b0646884~mv2.jpg/v1/fill/w_465,h_309,al_c,q_80,usm_0.66_1.00_0.01/187a23_7e2be440dd4145479dce6c98b0646884~mv2.webp");
+  background-image: url("images/brew1.jpg");
   min-height: 400px;
 }
 
@@ -32,13 +32,13 @@ body{
   min-height: 400px;
 }
 .bgimg-4 {
-  background-image: url("https://static.wixstatic.com/media/187a23_5869aa8973ac4d9dbaf2cfeec0cd1177~mv2_d_4264_1840_s_2.jpg/v1/crop/x_61,y_270,w_4203,h_1357/fill/w_978,h_318,al_c,q_80,usm_0.66_1.00_0.01/187a23_5869aa8973ac4d9dbaf2cfeec0cd1177~mv2_d_4264_1840_s_2.webp");
+  background-image: url("images/Balls-tent.jpg");
   min-height: 400px;
 }
-.bgimg-5 {
+/* .bgimg-5 {
   background-image: url("https://static.wixstatic.com/media/187a23_5869aa8973ac4d9dbaf2cfeec0cd1177~mv2_d_4264_1840_s_2.jpg/v1/crop/x_61,y_270,w_4203,h_1357/fill/w_978,h_318,al_c,q_80,usm_0.66_1.00_0.01/187a23_5869aa8973ac4d9dbaf2cfeec0cd1177~mv2_d_4264_1840_s_2.webp");
   min-height: 400px;
-}
+} */
 .bgimg-6 {
   background-image: url("images/teviot-lights1.jpg");
   min-height: 400px;
@@ -59,6 +59,25 @@ body{
   justify-content: flex-end;
   color: #000;
 }
+.thumbnail{
+  padding: 0;
+  border: 0;
+}
+
+#more {
+  display: none;
+  color: #fff;
+}
+#myBtn {
+  font-weight: lighter;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  font-family: helvetica;
+  text-transform: uppercase;
+}
+
 .control-label{
   font-size: 15px
 }
@@ -165,7 +184,7 @@ h3{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0%, 100% 0, 100% 88%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
 }
 
 .navflex{
@@ -292,19 +311,19 @@ h5{
 }
 #skew1{
   background: #000;
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew2{
   background: #fff;
-  clip-path: polygon(0 0%, 100% 0, 100% 86%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
 }
 #skew3{
   background: #000;
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew4{
   background: #fff;
-  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0% 100%);
 }
 #skew5{
   background: #000;
