@@ -79,18 +79,66 @@ h3{
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size:3vw;
   background: transparent;
-  padding: 10px 10px;
+  padding: 30px 10px;
   border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 1;
 }
+
+
+.text-area {
+ height: 50px;
+ overflow: hidden;
+ position: relative;
+ background: transparent;
+}
+.text-area h3 {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);
+ transform:translateX(-100%);
+ /* Apply animation to this element */
+ -moz-animation: scroll-right 15s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+@keyframes scroll-right {
+ 0%   {
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%);
+ }
+ 100% {
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);
+ }
+}
+
+
 .logo{
   width: 70%;
   border-radius: 20px;
-  padding-top: 200px
+  padding-top: 150px
 }
 .text-area{
   position: absolute;
@@ -150,10 +198,10 @@ header ul li{
 header ul li a{
   list-style: none;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: lighter;
   position: relative;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   font-family: helvetica;
   text-transform: uppercase;
 }
@@ -178,7 +226,7 @@ header ul li:hover a::before{
   html{
     font-size: 55%;
   }
-  nav ul{
+  ul{
     float: none;
     height: auto;
     flex-direction: column;
@@ -199,7 +247,7 @@ header ul li:hover a::before{
     overflow: hidden;
     background-color: transparent;
     position: absolute;
-    top: 35px;
+    top: 25px;
     right: 35px;
     width: 35px;
     height: 35px;
@@ -386,6 +434,10 @@ ul li a i {
   background:#000;
   box-shadow: 0px 3px 10px rgba(0,0,0,.55);
 }
+.fa-bars{
+  color: #fff;
+  font-size: 30px;
+}
 ul li a i:hover {
     opacity: .7;
 }
@@ -394,42 +446,6 @@ ul li a i:hover {
   padding-right: 9px;
   padding-top: 16px;
 }
-/* .box{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  height: 150px;
-  width: 150px;
-  background: lightgrey;
-  border-radius: 50%;
-  box-shadow: -3px -3px 7px #fff, 3px 3px 5px rgb(94,104,121,0.712);
-  position: relative;
-  margin: 0 10px;
-}
-.box::after i{
-  content: '';
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset -3px -3px 7px #fff, inset 3px 3px 5px rgb(94,104,121,0.712);
-}
-
-.box i{
-  content: '';
-  color: lightgrey;
-  font-size: 50px;
-  text-shadow: -3px -3px 7px #fff, 3px 3px 5px rgb(94,104,121,0.712);
-}
-.box:hover i{
-  color: deepskyblue;
-  transition: .7s;
-} */
 
 footer{
   background: #000;
