@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 if($_POST["submit"]) {
     $recipient="stepboyle77@gmail.com";
@@ -16,7 +16,7 @@ if($_POST["submit"]) {
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -41,7 +41,7 @@ if($_POST["submit"]) {
     <div class="container">
       <nav class="navbar-fixed-top">
         <div class="custom-menu">
-          <a href="javascript:void(0);" class="icon" >
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
           <a href="https://www.eventdecorscotland.co.uk/" class="active"></a>
@@ -400,18 +400,18 @@ var cusMenu = false;
 $(document).ready(function(){
   $('.custom-menu').on('click', function(){
     $('.custom-menu').children('span').fadeToggle();
-    $('nav').slideToggle();
+    $('.navbar-fixed-top').slideToggle();
     cusMenu = !cusMenu;
   });
 });
 $(window).on('resize', function(){
   if($(window).width() > 767){
-    $('nav').show();
+    $('.navbar-fixed-top').show();
   }else{
     if(cusMenu){
-      $('nav').show();
+      $('.navbar-fixed-top').show();
     }else{
-      $('nav').hide();
+      $('.navbar-fixed-top').hide();
     }
   }
 });
