@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
   <link rel="stylesheet" href="animate.css-master/animate.css">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -586,28 +587,28 @@
 
 <div id="contact" class="container">
   <h2>Contact Us</h2>
-  <form class="form-horizontal" action="/index.php">
+  <form id="form-inner" class="form-horizontal was-validated" method="POST" name="contactform" action="contact-form-handler.php">
     <div class="form-group">
       <label class="control-label col-sm-2" for="name">Name:</label>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <input type="text" class="form-control" id="name" name="sender" placeholder="Enter name">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <input type="email" class="form-control" id="email" name="senderEmail" placeholder="Enter email">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="date">Date of Event:</label>
-      <div class="col-sm-10">
+      <div class="col-sm-3">
         <input type="date" class="form-control" id="date" name="eventDate" placeholder="">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="type">Type of Event:</label>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <div class="checkbox" name="eventType">
           <label class="checkbox-inline"><input type="checkbox" value=""> Club Event</label>
           <label class="checkbox-inline"><input type="checkbox" value=""> Festival</label>
@@ -620,7 +621,7 @@
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="comment">Information:</label>
-      <div class="col-sm-10">
+      <div class="col-sm-9">
         <textarea class="form-control" rows="10" id="comment" name="message"></textarea>
       </div>
     </div>
@@ -631,9 +632,6 @@
     </div>
   </form>
 </div>
-
-<iframe src='/contact/contactform.php' frameborder='0'
-width='100%' height='600' allowtransparency='true'></iframe>
 
 
 <footer>

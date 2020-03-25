@@ -78,10 +78,13 @@ body{
   text-transform: uppercase;
 }
 
-.control-label{
+.control-label {
   font-size: 15px
 }
-.checkbox{
+.checkbox {
+  font-size: 15px
+}
+.form-control{
   font-size: 15px
 }
 
