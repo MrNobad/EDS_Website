@@ -5,7 +5,7 @@ html{
 body{
   margin: 0;
   padding: 0;
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
@@ -267,7 +267,7 @@ header ul li:hover a::before{
   }
   .custom-menu{
     overflow: hidden;
-    background-color: transparent;
+    background-color: black;
     position: absolute;
     top: 25px;
     right: 35px;
@@ -338,7 +338,7 @@ h2 {
 }
 #skew1{
   background: #000;
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 92%);
 }
 #skew2{
   background: lightgrey;
@@ -435,7 +435,7 @@ h2 {
 }
 .wrapper4 ul{
   margin: 0px;
-  background: lightgrey;
+  background: darkgrey;
   padding: 30px;
   display: flex;
   flex-direction: row;
