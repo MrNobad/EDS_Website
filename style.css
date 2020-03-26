@@ -341,7 +341,7 @@ h2 {
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 92%);
 }
 #skew2{
-  background: lightgrey;
+  background: darkgrey;
   clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
 }
 #skew3{
@@ -349,7 +349,7 @@ h2 {
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew4{
-  background: lightgrey;
+  background: darkgrey;
   clip-path: polygon(0 0%, 100% 0, 100% 85%, 0% 100%);
 }
 #skew5{
@@ -357,7 +357,7 @@ h2 {
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
 }
 #skew6{
-  background-color: lightgrey;
+  background-color: darkgrey;
   /* clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%); */
 }
 
