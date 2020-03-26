@@ -90,7 +90,7 @@ body{
 
 #contact{
   display: block;
-  background-color: lightgrey;
+  background-color: darkgrey;
   padding: 10px 20px;
   margin-bottom: 40px;
   border-radius: 20px;
@@ -135,11 +135,11 @@ h3{
  animation: scroll-right 15s linear infinite;
 }
 /* Move it (define the animation) */
-@-moz-keyframes scroll-right {
+@-moz-keyframes scroll-left {
  0%   { -moz-transform: translateX(100%); }
  100% { -moz-transform: translateX(-100%); }
 }
-@-webkit-keyframes scroll-right {
+@-webkit-keyframes scroll-left {
  0%   { -webkit-transform: translateX(100%); }
  100% { -webkit-transform: translateX(-100%); }
 }
@@ -187,7 +187,7 @@ h3{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .navflex{
@@ -300,14 +300,28 @@ header ul li:hover a::before{
 }
 }
 
-h2{
-  font-size: 7vh;
-  color: inherit;
+h2 {
+  font-size: 50px;
+  color: #000;
 }
-h5{
-  font-size: 2vh;
-  color: inherit;
+
+.border{
+  background-color: transparent;
+  border-color: #000;
+  box-shadow: 6px 6px black;
+  font-size:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 2px;
 }
+.row {
+  margin-top: 10px;
+}
+.snapwidget-widget{
+  margin-top: 10px;
+}
+
 .cust-div{
   width: 100%;
   position: relative;
@@ -317,7 +331,7 @@ h5{
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew2{
-  background: #fff;
+  background: lightgrey;
   clip-path: polygon(0 0%, 100% 0, 100% 80%, 0% 100%);
 }
 #skew3{
@@ -325,7 +339,7 @@ h5{
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew4{
-  background: #fff;
+  background: lightgrey;
   clip-path: polygon(0 0%, 100% 0, 100% 85%, 0% 100%);
 }
 #skew5{
@@ -333,7 +347,7 @@ h5{
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
 }
 #skew6{
-  background-color: #fff;
+  background-color: lightgrey;
   /* clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%); */
 }
 
@@ -356,7 +370,7 @@ h5{
   transform-origin: right bottom;
   transform: skewY(-3deg);
 }
-.container2 h2, h5{
+.container2 h2 h5{
   color: #000;
 }
 .container4 h2, h5{
@@ -401,6 +415,7 @@ h5{
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 .wrapper3{
   padding-top: 450px;
@@ -410,7 +425,7 @@ h5{
 }
 .wrapper4 ul{
   margin: 0px;
-  background: #fff;
+  background: lightgrey;
   padding: 30px;
   display: flex;
   flex-direction: row;
