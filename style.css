@@ -308,8 +308,18 @@ h2 {
 .border{
   background-color: transparent;
   border-color: #000;
-  box-shadow: 6px 6px black;
   font-size:50px;
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 2px;
+}
+.border1{
+  background-color: transparent;
+  border: 1px solid #212529 !important;
+  font-size:50px;
+  font-weight: lighter;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
