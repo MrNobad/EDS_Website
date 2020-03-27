@@ -5,7 +5,7 @@ html{
 body{
   margin: 0;
   padding: 0;
-  background-color: darkgrey;
+  background-color: #000;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
@@ -71,8 +71,8 @@ body{
 #myBtn {
   font-weight: lighter;
   border: none;
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: transparent;
   font-size: 15px;
   font-family: helvetica;
   text-transform: uppercase;
@@ -198,6 +198,7 @@ h3{
 .navbar-fixed-top.scrolled {
   background-color: #000 !important;
   transition: background-color 200ms linear;
+  height: 70px;
 }
 
 header {
@@ -317,7 +318,8 @@ h2 {
 }
 .border1{
   background-color: transparent;
-  border: 1px solid #212529 !important;
+  color: #fff;
+  border: 1px solid #fff !important;
   font-size:50px;
   font-weight: lighter;
   padding-left: 10px;
@@ -337,27 +339,27 @@ h2 {
   position: relative;
 }
 #skew1{
-  background: darkgrey;
+  background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 95%);
 }
 #skew2{
-  background: darkgrey;
+  background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
 }
 #skew3{
-  background: darkgrey;
+  background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 #skew4{
-  background: darkgrey;
+  background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 85%, 0% 100%);
 }
 #skew5{
-  background: darkgrey;
+  background: #000;
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
 }
 #skew6{
-  background-color: darkgrey;
+  background-color: #000;
   /* clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%); */
 }
 
@@ -435,7 +437,7 @@ h2 {
 }
 .wrapper4 ul{
   margin: 0px;
-  background: darkgrey;
+  background: #000;
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -478,7 +480,7 @@ ul li a i {
 }
 
 .fa-paper-plane {
-  background:#000;
+  background:#050;
   box-shadow: 0px 3px 10px rgba(0,0,0,.55);
 }
 .fa-bars{
