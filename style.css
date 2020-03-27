@@ -266,14 +266,12 @@ header ul li:hover a::before{
   ul li:not(:last-child) a{
     border-bottom: 1px solid #fff;
   }
-  .custom-menu{
+  .custom-menu {
     overflow: hidden;
     background-color: black;
     position: absolute;
     top: 25px;
     right: 35px;
-    width: 35px;
-    height: 35px;
     cursor: pointer;
   }
   .custom-menu a.icon {
@@ -322,6 +320,7 @@ h2 {
   color: #fff;
   border: 1px solid #fff !important;
   font-size:50px;
+  font-weight: lighter;
   font-weight: 100;
   padding-left: 10px;
   padding-right: 10px;
