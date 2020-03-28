@@ -44,12 +44,12 @@ body{
   min-height: 400px;
 }
 .caption1, .caption3, .caption5{
-  padding-right: 50px;
+  /* padding-right: 50px; */
   padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  color: #000;
+  color: #ddddddbf;
 }
 .caption2, .caption4{
   padding-left: 50px;
@@ -57,7 +57,7 @@ body{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  color: #000;
+  color: #ddddddbf;
 }
 .thumbnail{
   padding: 0;
@@ -271,7 +271,9 @@ header ul li:hover a::before{
     background-color: black;
     position: absolute;
     top: 25px;
-    right: 35px;
+    right: 55px;
+    /* width: 35px;
+    height: 35px; */
     cursor: pointer;
   }
   .custom-menu a.icon {
@@ -304,18 +306,23 @@ h2 {
   color: #000;
 }
 
-.border{
+.border1{
   background-color: transparent;
-  border-color: #000;
-  border: 1px solid #000 !important;
+  color: #ddddddbf;
+  border: 1px solid #ddddddbf !important;
   font-size:50px;
-  font-weight: lighter;
+  font-weight: 100;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
   padding-bottom: 2px;
+  margin-right: 20px;
+  margin-left: 600px;
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.border1{
+.border2{
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff !important;
@@ -325,8 +332,13 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 600px;
   padding-bottom: 2px;
+  display: flex;
+  flex-direction: row;
 }
+
 .row {
   margin-top: 10px;
 }
@@ -402,7 +414,6 @@ h2 {
 }
 
 .content{
-  font-weight: bold;
   text-align: center;
   padding: 10px 50px;
   overflow: hidden;
