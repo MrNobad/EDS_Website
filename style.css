@@ -43,7 +43,7 @@ body{
   background-image: url("images/teviot-lights1.jpg");
   min-height: 400px;
 }
-.caption1, .caption3, .caption5{
+.caption1, .caption3{
   /* padding-right: 50px; */
   padding-top: 50px;
   display: flex;
@@ -51,7 +51,7 @@ body{
   justify-content: flex-end;
   color: #ddddddbf;
 }
-.caption2, .caption4{
+.caption2, .caption4,.caption5{
   padding-left: 50px;
   padding-top: 50px;
   display: flex;
@@ -71,7 +71,7 @@ body{
 #myBtn {
   font-weight: lighter;
   border: none;
-  color: #000;
+  color: #ddddddbf;
   background-color: transparent;
   font-size: 15px;
   font-family: helvetica;
@@ -271,9 +271,7 @@ header ul li:hover a::before{
     background-color: black;
     position: absolute;
     top: 25px;
-    right: 55px;
-    /* width: 35px;
-    height: 35px; */
+    right: 50px;
     cursor: pointer;
   }
   .custom-menu a.icon {
@@ -306,12 +304,12 @@ h2 {
   color: #000;
 }
 
-.border1{
+/* .border1{
   background-color: transparent;
   color: #ddddddbf;
   border: 1px solid #ddddddbf !important;
   font-size:50px;
-  font-weight: 100;
+  font-weight: lighter;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
@@ -321,7 +319,7 @@ h2 {
   padding-bottom: 2px;
   display: flex;
   flex-direction: row-reverse;
-}
+} */
 .border2{
   background-color: transparent;
   color: #fff;
@@ -338,7 +336,22 @@ h2 {
   display: flex;
   flex-direction: row;
 }
-
+.border1{
+  background-color: transparent;
+  color: #ddddddbf;
+  border: 1px solid #ddddddbf !important;
+  font-size:50px;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  /* margin-left: 400px; */
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 .row {
   margin-top: 10px;
 }
