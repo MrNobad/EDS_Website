@@ -264,7 +264,7 @@ header ul li:hover a::before{
     text-align: center;
   }
   ul li:not(:last-child) a{
-    border-bottom: 1px solid #fff;
+  
   }
   .custom-menu {
     overflow: hidden;
