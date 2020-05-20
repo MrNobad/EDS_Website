@@ -217,6 +217,7 @@ header ul li{
   list-style: none;
   text-decoration: none;
   padding: 10px 20px;
+
 }
 header ul li a{
   list-style: none;
@@ -291,7 +292,8 @@ header ul li:hover a::before{
     color: #fff;
   }
   .custom-menu #myLinks {
-    display: none;
+    display: none
+    height: auto;
   }
   .active {
   background-color: #4CAF50;
