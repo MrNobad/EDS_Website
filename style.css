@@ -43,8 +43,8 @@ body{
   background-image: url("images/teviot-lights1.jpg");
   min-height: 400px;
 }
-.caption1, .caption3{
-  /* padding-right: 50px; */
+.caption3{
+  padding-right: 50px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
