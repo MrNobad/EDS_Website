@@ -292,7 +292,7 @@ header ul li:hover a::before{
     color: #fff;
   }
   .custom-menu #myLinks {
-    display: none
+    display: none;
     height: auto;
   }
   .active {
@@ -348,7 +348,7 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   /* margin-left: 400px; */
   padding-bottom: 2px;
   display: flex;
