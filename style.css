@@ -264,9 +264,9 @@ header ul li:hover a::before{
     padding: 10px 0;
     text-align: center;
   }
-  ul li:not(:last-child) a{
+  /* ul li:not(:last-child) a{
 
-  }
+  } */
   .custom-menu {
     overflow: hidden;
     background-color: black;
@@ -353,7 +353,7 @@ h2 {
   padding-bottom: 2px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .row {
   margin-top: 10px;
