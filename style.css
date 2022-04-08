@@ -432,8 +432,8 @@ h2 {
 
   .contact2 {
   color: #fff;
-  border: 1px solid #fff !important;
-  font-size: 50px;
+  /* border: 1px solid #fff !important; */
+  font-size: 20px;
   font-weight: lighter;
   }
 
