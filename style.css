@@ -410,6 +410,7 @@ h2 {
 }
 .container2 h2 h5{
   color: #000;
+  margin-bottom: 10px;
 }
 .container4 h2, h5{
   color: #000;
@@ -426,6 +427,13 @@ h2 {
 .container5 h2, h5{
   color: #fff;
 }
+
+  .contact2 {
+  color: #fff;
+  border: 1px solid #fff !important;
+  font-size: 50px;
+  font-weight: lighter;
+  }
 
 .content{
   text-align: center;
