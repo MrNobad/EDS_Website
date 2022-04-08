@@ -306,7 +306,7 @@ h2 {
   color: #000;
 }
 
-/* .border1{
+.border1{
   background-color: transparent;
   color: #ddddddbf;
   border: 1px solid #ddddddbf !important;
@@ -320,8 +320,9 @@ h2 {
   margin-left: 600px;
   padding-bottom: 2px;
   display: flex;
-  flex-direction: row-reverse;
-} */
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+}
 .border2{
   background-color: transparent;
   color: #fff;
@@ -332,7 +333,7 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   margin-right: 200px;
   padding-bottom: 10px;
   padding-top: 10px;
