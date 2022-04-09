@@ -347,6 +347,24 @@ h2 {
   flex-direction: row;
   justify-content: center;
 }
+.borderHire{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff !important;
+  font-size:50px;
+  font-weight: lighter;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  /* margin-right: 200px; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .border1{
   background-color: transparent;
   color: #ddddddbf;
