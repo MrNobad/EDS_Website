@@ -329,7 +329,7 @@ h2 {
   /* flex-direction: row-reverse; */
   justify-content: center;
 }
-/* .border2{
+.border2{
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff !important;
@@ -346,7 +346,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-} */
+}
 .border1{
   background-color: transparent;
   color: #ddddddbf;
@@ -361,7 +361,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
 }
-.border2{
+/* .border2{
   background-color: transparent;
   color: #ddddddbf;
   border: 1px solid #ddddddbf !important;
@@ -374,7 +374,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
 .row {
   margin-top: 10px;
 }
